@@ -11,6 +11,12 @@ public class AuditFinding implements java.io.Serializable {
 	private java.lang.String processName;
 	private java.lang.String description;
 
+	private java.lang.Boolean necessaryToReact;
+
+	private java.lang.String resolution;
+
+	private java.lang.Boolean resolutionIsSatisfactory;
+
 	public AuditFinding() {
 	}
 
@@ -30,10 +36,40 @@ public class AuditFinding implements java.io.Serializable {
 		this.description = description;
 	}
 
+	public java.lang.Boolean getNecessaryToReact() {
+		return this.necessaryToReact;
+	}
+
+	public void setNecessaryToReact(java.lang.Boolean necessaryToReact) {
+		this.necessaryToReact = necessaryToReact;
+	}
+
+	public java.lang.String getResolution() {
+		return this.resolution;
+	}
+
+	public void setResolution(java.lang.String resolution) {
+		this.resolution = resolution;
+	}
+
+	public java.lang.Boolean getResolutionIsSatisfactory() {
+		return this.resolutionIsSatisfactory;
+	}
+
+	public void setResolutionIsSatisfactory(
+			java.lang.Boolean resolutionIsSatisfactory) {
+		this.resolutionIsSatisfactory = resolutionIsSatisfactory;
+	}
+
 	public AuditFinding(java.lang.String processName,
-			java.lang.String description) {
+			java.lang.String description, java.lang.Boolean necessaryToReact,
+			java.lang.String resolution,
+			java.lang.Boolean resolutionIsSatisfactory) {
 		this.processName = processName;
 		this.description = description;
+		this.necessaryToReact = necessaryToReact;
+		this.resolution = resolution;
+		this.resolutionIsSatisfactory = resolutionIsSatisfactory;
 	}
 
 }
