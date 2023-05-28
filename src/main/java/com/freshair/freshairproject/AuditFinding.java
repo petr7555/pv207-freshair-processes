@@ -6,12 +6,34 @@ package com.freshair.freshairproject;
 
 public class AuditFinding implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public AuditFinding() {
-    }
+	private java.lang.String processName;
+	private java.lang.String description;
 
+	public AuditFinding() {
+	}
 
+	public java.lang.String getProcessName() {
+		return this.processName;
+	}
 
+	public void setProcessName(java.lang.String processName) {
+		this.processName = processName;
+	}
+
+	public java.lang.String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(java.lang.String description) {
+		this.description = description;
+	}
+
+	public AuditFinding(java.lang.String processName,
+			java.lang.String description) {
+		this.processName = processName;
+		this.description = description;
+	}
 
 }
