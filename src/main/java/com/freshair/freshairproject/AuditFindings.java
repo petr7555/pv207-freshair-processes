@@ -6,12 +6,25 @@ package com.freshair.freshairproject;
 
 public class AuditFindings implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public AuditFindings() {
-    }
+	private java.util.List<com.freshair.freshairproject.AuditFinding> findings;
 
+	public AuditFindings() {
+	}
 
+	public java.util.List<com.freshair.freshairproject.AuditFinding> getFindings() {
+		return this.findings;
+	}
 
+	public void setFindings(
+			java.util.List<com.freshair.freshairproject.AuditFinding> findings) {
+		this.findings = findings;
+	}
+
+	public AuditFindings(
+			java.util.List<com.freshair.freshairproject.AuditFinding> findings) {
+		this.findings = findings;
+	}
 
 }
