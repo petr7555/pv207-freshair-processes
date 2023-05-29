@@ -6,12 +6,33 @@ package com.freshair.freshairproject;
 
 public class Item implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Item() {
-    }
+	private java.lang.String name;
+	private java.lang.Integer availableQuantity;
 
+	public Item() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.Integer getAvailableQuantity() {
+		return this.availableQuantity;
+	}
+
+	public void setAvailableQuantity(java.lang.Integer availableQuantity) {
+		this.availableQuantity = availableQuantity;
+	}
+
+	public Item(java.lang.String name, java.lang.Integer availableQuantity) {
+		this.name = name;
+		this.availableQuantity = availableQuantity;
+	}
 
 }
