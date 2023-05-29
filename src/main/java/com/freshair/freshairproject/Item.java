@@ -10,7 +10,7 @@ public class Item implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	private java.lang.String name;
-	private java.lang.Integer availableQuantity;
+	private java.lang.Integer quantity;
 
 	public Item() {
 	}
@@ -23,17 +23,17 @@ public class Item implements java.io.Serializable {
 		this.name = name;
 	}
 
-	public java.lang.Integer getAvailableQuantity() {
-		return this.availableQuantity;
+	public java.lang.Integer getQuantity() {
+		return this.quantity;
 	}
 
-	public void setAvailableQuantity(java.lang.Integer availableQuantity) {
-		this.availableQuantity = availableQuantity;
+	public void setQuantity(java.lang.Integer quantity) {
+		this.quantity = quantity;
 	}
 
-	public Item(java.lang.String name, java.lang.Integer availableQuantity) {
+	public Item(java.lang.String name, java.lang.Integer quantity) {
 		this.name = name;
-		this.availableQuantity = availableQuantity;
+		this.quantity = quantity;
 	}
 
 }
