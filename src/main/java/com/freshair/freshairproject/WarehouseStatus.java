@@ -8,20 +8,21 @@ public class WarehouseStatus implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<java.lang.String> items;
+	private java.util.List<com.freshair.freshairproject.Item> items;
 
 	public WarehouseStatus() {
 	}
 
-	public java.util.List<java.lang.String> getItems() {
+	public java.util.List<com.freshair.freshairproject.Item> getItems() {
 		return this.items;
 	}
 
-	public void setItems(java.util.List<java.lang.String> items) {
+	public void setItems(java.util.List<com.freshair.freshairproject.Item> items) {
 		this.items = items;
 	}
 
-	public WarehouseStatus(java.util.List<java.lang.String> items) {
+	public WarehouseStatus(
+			java.util.List<com.freshair.freshairproject.Item> items) {
 		this.items = items;
 	}
 
