@@ -6,12 +6,23 @@ package com.freshair.freshairproject;
 
 public class Order implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Order() {
-    }
+	private java.util.List<com.freshair.freshairproject.Item> items;
 
+	public Order() {
+	}
 
+	public java.util.List<com.freshair.freshairproject.Item> getItems() {
+		return this.items;
+	}
 
+	public void setItems(java.util.List<com.freshair.freshairproject.Item> items) {
+		this.items = items;
+	}
+
+	public Order(java.util.List<com.freshair.freshairproject.Item> items) {
+		this.items = items;
+	}
 
 }
