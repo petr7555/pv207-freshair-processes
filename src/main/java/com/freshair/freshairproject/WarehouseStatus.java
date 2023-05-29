@@ -6,12 +6,23 @@ package com.freshair.freshairproject;
 
 public class WarehouseStatus implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public WarehouseStatus() {
-    }
+	private java.util.List<java.lang.String> items;
 
+	public WarehouseStatus() {
+	}
 
+	public java.util.List<java.lang.String> getItems() {
+		return this.items;
+	}
 
+	public void setItems(java.util.List<java.lang.String> items) {
+		this.items = items;
+	}
+
+	public WarehouseStatus(java.util.List<java.lang.String> items) {
+		this.items = items;
+	}
 
 }
