@@ -6,12 +6,89 @@ package com.freshair.freshairproject;
 
 public class ComponentExchangeRequest implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ComponentExchangeRequest() {
-    }
+	private java.lang.String componentName;
+	private java.lang.String customerIssueDescription;
+	private java.lang.String examinationResults;
+	private java.lang.Boolean exchangeIsJustified;
+	private java.lang.Integer componentPrice;
+	private java.lang.String currency;
+	private java.lang.Boolean approved;
 
+	public ComponentExchangeRequest() {
+	}
 
+	public java.lang.String getComponentName() {
+		return this.componentName;
+	}
 
+	public void setComponentName(java.lang.String componentName) {
+		this.componentName = componentName;
+	}
+
+	public java.lang.String getCustomerIssueDescription() {
+		return this.customerIssueDescription;
+	}
+
+	public void setCustomerIssueDescription(
+			java.lang.String customerIssueDescription) {
+		this.customerIssueDescription = customerIssueDescription;
+	}
+
+	public java.lang.String getExaminationResults() {
+		return this.examinationResults;
+	}
+
+	public void setExaminationResults(java.lang.String examinationResults) {
+		this.examinationResults = examinationResults;
+	}
+
+	public java.lang.Boolean getExchangeIsJustified() {
+		return this.exchangeIsJustified;
+	}
+
+	public void setExchangeIsJustified(java.lang.Boolean exchangeIsJustified) {
+		this.exchangeIsJustified = exchangeIsJustified;
+	}
+
+	public java.lang.Integer getComponentPrice() {
+		return this.componentPrice;
+	}
+
+	public void setComponentPrice(java.lang.Integer componentPrice) {
+		this.componentPrice = componentPrice;
+	}
+
+	public java.lang.String getCurrency() {
+		return this.currency;
+	}
+
+	public void setCurrency(java.lang.String currency) {
+		this.currency = currency;
+	}
+
+	public java.lang.Boolean getApproved() {
+		return this.approved;
+	}
+
+	public void setApproved(java.lang.Boolean approved) {
+		this.approved = approved;
+	}
+
+	public ComponentExchangeRequest(java.lang.String componentName,
+			java.lang.String customerIssueDescription,
+			java.lang.String examinationResults,
+			java.lang.Boolean exchangeIsJustified,
+			java.lang.Integer componentPrice, java.lang.String currency,
+			java.lang.Boolean approved) {
+		this.componentName = componentName;
+		this.customerIssueDescription = customerIssueDescription;
+		this.examinationResults = examinationResults;
+		this.exchangeIsJustified = exchangeIsJustified;
+		this.componentPrice = componentPrice;
+		this.currency = currency;
+		this.approved = approved;
+	}
 
 }
