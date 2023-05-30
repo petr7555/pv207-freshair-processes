@@ -16,6 +16,8 @@ public class ComponentExchangeRequest implements java.io.Serializable {
 	private java.lang.String currency;
 	private java.lang.Boolean approved;
 
+	private java.lang.String customerName;
+
 	public ComponentExchangeRequest() {
 	}
 
@@ -76,12 +78,20 @@ public class ComponentExchangeRequest implements java.io.Serializable {
 		this.approved = approved;
 	}
 
+	public java.lang.String getCustomerName() {
+		return this.customerName;
+	}
+
+	public void setCustomerName(java.lang.String customerName) {
+		this.customerName = customerName;
+	}
+
 	public ComponentExchangeRequest(java.lang.String componentName,
 			java.lang.String customerIssueDescription,
 			java.lang.String examinationResults,
 			java.lang.Boolean exchangeIsJustified,
 			java.lang.Integer componentPrice, java.lang.String currency,
-			java.lang.Boolean approved) {
+			java.lang.Boolean approved, java.lang.String customerName) {
 		this.componentName = componentName;
 		this.customerIssueDescription = customerIssueDescription;
 		this.examinationResults = examinationResults;
@@ -89,6 +99,7 @@ public class ComponentExchangeRequest implements java.io.Serializable {
 		this.componentPrice = componentPrice;
 		this.currency = currency;
 		this.approved = approved;
+		this.customerName = customerName;
 	}
 
 }
