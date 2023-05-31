@@ -1,4 +1,4 @@
-Repository Init Content
-=======================
-
-Your project description here.
+## How to update
+- `git pull business-central master`
+    - password `wbadmin`
+- `git push`
